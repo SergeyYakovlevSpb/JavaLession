@@ -8,8 +8,9 @@ public class Library {
 
     String name = null;
     String adress = null;
+    Integer lenghtArray = Main.lenghtArray;
 
-    Book[] books = new Book[5];
+    Book[] books = new Book[lenghtArray];
 
 
     @Override

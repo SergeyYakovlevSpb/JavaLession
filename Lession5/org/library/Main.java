@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class Main {
 
+   public static int lenghtArray = 5;
 
     public static void main (String[] args){
 
@@ -16,9 +17,10 @@ public class Main {
      library.name = "Central Library";
      library.adress = "street Nevskay 40-100";
 
-     Book[] books = new Book[5];
 
-      for (int index = 0;index < 5; index++){
+     Book[] books = new Book[lenghtArray];
+
+      for (int index = 0;index < lenghtArray; index++){
           Date dateBook = new Date();
 
           Book bookSet = new Book();
@@ -33,7 +35,7 @@ public class Main {
 
       System.out.println(library.toString());
 
-    for (int index = 0;index < 5; index++){
+    for (int index = 0;index < lenghtArray; index++){
          System.out.println(library.getBooks()[index].toString());
     }
 
