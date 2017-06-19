@@ -8,10 +8,10 @@ import java.util.Date;
  */
 public class Book extends Library{
     //isbn
-    String name = null;
-    String autor = null;
-    Date dateMade = new Date();
-    String dateMadePrint = null;
+    private String name = null;
+    private String autor = null;
+    private Date dateMade = new Date();
+    private String dateMadePrint = null;
 
 
     @Override

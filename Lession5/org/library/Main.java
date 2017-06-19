@@ -7,20 +7,40 @@ import java.util.Date;
  */
 public class Main {
 
-   public static int lenghtArray = 5;
+
 
     public static void main (String[] args){
 
 
 
-     Library library = new Library();
-     library.name = "Central Library";
-     library.adress = "street Nevskay 40-100";
 
 
-     Book[] books = new Book[lenghtArray];
+      Book book1 = new Book();
+        book1.setName("Name1");
+        book1.setAutor("Autor1");
+        book1.setDateMade(new Date());
 
-      for (int index = 0;index < lenghtArray; index++){
+      Book book2 = new Book();
+        book2.setName("Name1");
+        book2.setAutor("Autor1");
+        book2.setDateMade(new Date());
+
+      Book book3 = new Book();
+        book3.setName("Name1");
+        book3.setAutor("Autor1");
+        book3.setDateMade(new Date());
+
+      Book[] books = {book1, book2, book3};
+
+
+        Library library = new Library();
+        library.setName("Central Library");
+        library.setAdress("street Nevskay 40-100");
+        library.setBooks(books);
+
+        System.out.println(library.toString());
+
+     /* for (int index = 0;index < lenghtArray; index++){
           Date dateBook = new Date();
 
           Book bookSet = new Book();
@@ -39,7 +59,7 @@ public class Main {
          System.out.println(library.getBooks()[index].toString());
     }
 
-     System.out.println();
+     System.out.println();*/
 
     }
 }
